@@ -26,6 +26,13 @@ public class MonsterController
 	}
 	public void start()
 	{
-		myOutput.dislpayMonsterInfo(gabeMonster);
+		myOutput.displayMonsterInfo(gabeMonster.toString());
+		askQuestions();
+		myOutput.displayMonsterInfo("New Monster Info" +gabeMonster.toString());
+	}
+	
+	private void askQuestions()
+	{
+		
 	}
 } 
