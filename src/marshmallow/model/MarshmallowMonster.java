@@ -54,14 +54,14 @@ public class MarshmallowMonster
 		return monsterBellyButton;
 	}
 	
-	public void setMonsterEyes(int monsterEyes)
-	{
-		this.monsterEyes = monsterEyes;
-	}
-	
 	public void setMonsterName(String monsterName)
 	{
 		this.monsterName = monsterName;
+	}
+	
+	public void setMonsterEyes(int monsterEyes)
+	{
+		this.monsterEyes = monsterEyes;
 	}
 	
 	public void setMonsterLegs(double monsterLegs)
@@ -86,8 +86,8 @@ public class MarshmallowMonster
 	
 	public String toString()
 	{
-		String monster = "This monster has "  + monsterEyes + " eyes, and its' name is " + monsterName;
-		
+		String monster = monsterName monsterEyes monsterNoses monsterHair;
+		 
 		return monster;
 	}
 	
