@@ -27,7 +27,7 @@ public class MonsterController
 	{
 		myOutput.displayMonsterInfo(gabeMonster.toString());
 		askQuestions();
-		myOutput.displayMonsterInfo("New Monster Info" +gabeMonster.toString());
+		myOutput.displayMonsterInfo("New Monster Info " + gabeMonster.toString());
 	}
 	
 	private void askQuestions()
@@ -46,6 +46,9 @@ public class MonsterController
 		gabeMonster.setMonsterHair(betterMonsterHair);
 		System.out.println("Type in how many legs you want your monster to have");
 		double betterMonsterLegs = monsterScanner.nextDouble();
-		gabeMonster.setMonsterLegs(betterMonsterLeggs)
+		gabeMonster.setMonsterLegs(betterMonsterLegs);
+		System.out.println("Type in how many belly buttons you want your monster to have");
+		boolean betterMonsterBellyButton = monsterScanner.nextBoolean();
+		gabeMonster.setMonsterBellyButton(betterMonsterBellyButton);
 	}
 } 
