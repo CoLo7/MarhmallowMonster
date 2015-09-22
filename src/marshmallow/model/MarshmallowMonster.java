@@ -86,7 +86,7 @@ public class MarshmallowMonster
 	
 	public String toString()
 	{
-		String monster = monsterName monsterEyes monsterNoses monsterHair;
+		String monster = "Your monsters name is " + monsterName;
 		 
 		return monster;
 	}
