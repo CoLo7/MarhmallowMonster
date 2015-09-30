@@ -3,6 +3,7 @@ package src.marshmallow.controller;
 import src.marshmallow.model.MarshmallowMonster;
 import src.marshmallow.view.MonsterOutput;
 import java.util.Scanner;
+import src.marshmallow.view.MonsterPopupDisplay;
 
 public class MonsterController
 {
@@ -10,19 +11,22 @@ public class MonsterController
 	private MarshmallowMonster userMonster;
 	private MonsterOutput myOutput;
 	private Scanner monsterScanner;
+	private MonsterPopupDisplay myPopups;
+	
 	
 	public MonsterController()
 	{
 		int eyes = 5;
+		int noses = 1;
 		double legs = 6;
 		double hair = 3;
-		int noses = 1;
 		boolean hasBellyButton = false;
 		String name = "BullyMong";
 		
 		monsterScanner = new Scanner(System.in);
 		myOutput = new MonsterOutput();
 		gabeMonster = new MarshmallowMonster(name, eyes, noses, hair, legs, hasBellyButton);
+		myPopups = new MonsterPopupDisplay();
 	}
 	
 	public void start()
